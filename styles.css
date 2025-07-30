@@ -1,3 +1,4 @@
+/* General body styles */
 body {
   background-color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,13 +7,15 @@ body {
   padding-top: 1em;
 }
 
+/* Banner image */
 .banner img {
-  content: url("banner.jpg.JPG");
+  content: url("banner.JPG");
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
+/* Header styles */
 header {
   background-color: #2b2b2b;
   color: white;
@@ -20,6 +23,7 @@ header {
   text-align: center;
 }
 
+/* Navigation menu */
 nav {
   margin-top: 1em;
 }
@@ -33,19 +37,21 @@ nav a {
   padding: 0.5em 1em;
   background-color: #444;
   border-radius: 4px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 nav a:hover {
   background-color: #666;
 }
 
+/* Section spacing and layout */
 section {
   padding: 2em;
   max-width: 900px;
   margin: auto;
 }
 
+/* Apartment card layout */
 .apartment-card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -54,14 +60,16 @@ section {
   max-width: 600px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   text-align: center;
+  background-color: #fff;
 }
 
 .apartment-card img {
-  content: url("2bed.jpg.JPG");
+  content: url("2bed.JPG");
   width: 100%;
   border-radius: 8px;
 }
 
+/* Contact form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -73,8 +81,10 @@ input, textarea {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1em;
+  width: 100%;
 }
 
+/* Submit button */
 button {
   padding: 0.8em;
   background-color: #2b2b2b;
@@ -90,6 +100,7 @@ button:hover {
   background-color: #444;
 }
 
+/* Footer */
 footer {
   background-color: #2b2b2b;
   color: white;
