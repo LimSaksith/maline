@@ -3,9 +3,11 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
+  padding-top: 1em;
 }
 
 .banner img {
+  content: url("banner.jpg.JPG");
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -55,6 +57,7 @@ section {
 }
 
 .apartment-card img {
+  content: url("2bed.jpg.JPG");
   width: 100%;
   border-radius: 8px;
 }
