@@ -221,6 +221,25 @@
     100% { transform: translateX(0); }
   }
 
+  .carousel-track-horizontal {
+    display: flex;
+    width: 300%;
+    animation: scrollHorizontal 12s infinite ease-in-out;
+  }
+
+  .carousel-track-horizontal img {
+    width: 100%;
+    flex: 0 0 100%;
+    object-fit: cover;
+  }
+
+  @keyframes scrollHorizontal {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+  }
+
 </style>
 </head>
 <body>
@@ -242,7 +261,7 @@
   <section id="home">
     <h2>Welcome Home</h2>
     <div class="carousel-container">
-      <div class="carousel-track">
+      <div class="carousel-track-horizontal">
         <img src="photoWelcome Home (1).jpg" alt="Room 1">
         <img src="photoWelcome Home (2).jpg" alt="Room 2">
         <img src="photoWelcome Home (3).jpg" alt="Room 3">
