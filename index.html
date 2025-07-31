@@ -86,7 +86,7 @@
       gap: 1em;
     }
 
-    input, textarea {
+    input, textarea, select {
       padding: 0.8em;
       border: 1px solid #ccc;
       border-radius: 5px;
@@ -159,18 +159,18 @@
   </section>
 
   <section id="book">
-  <h2>Book Now</h2>
-  <form>
-    <input type="text" placeholder="Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-    <select required>
-      <option value="">Gender</option>
-      <option value="M">Male</option>
-      <option value="F">Female</option>
-    </select>
-    <button type="submit">Send</button>
-  </form>
-</section>
+    <h2>Book Now</h2>
+    <form>
+      <input type="text" placeholder="Name" required>
+      <input type="tel" placeholder="Phone Number" required>
+      <select required>
+        <option value="">Gender</option>
+        <option value="M">Male</option>
+        <option value="F">Female</option>
+      </select>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <section id="service">
     <h2>Our Services</h2>
@@ -206,15 +206,27 @@
         });
       });
 
-      const form = document.querySelector("form");
-      if (form) {
+      const forms = document.querySelectorAll("form");
+      forms.forEach(form => {
         form.addEventListener("submit", function (event) {
           event.preventDefault();
           alert("Thank you! We will contact you shortly.");
           form.reset();
         });
-      }
+      });
     });
   </script>
+ <footer>
+  <p>&copy; 2025 Hotel Apartments. All rights reserved.</p>
+  <div class="social-links">
+    <span>Follow us:</span>
+    <a href="https://www.facebook.com" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30">
+    </a>
+    <a href="https://t.me/yourchannel" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" width="30">
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" width="30">
 </body>
 </html>
