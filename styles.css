@@ -64,6 +64,10 @@ header img {
   border-radius: 10px;
 }
 
+header {
+  text-align: center;
+}
+
 /* Apartment Cards */
 .apartment-card h3 {
   color: #0072ff;
@@ -83,4 +87,13 @@ section h2 {
   padding-bottom: 0.5em;
   margin-bottom: 1em;
   text-align: center;
+}
+
+/* Welcome Image */
+.header-image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 1em auto;
+  border-radius: 10px;
 }
