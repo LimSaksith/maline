@@ -240,6 +240,88 @@
     100% { transform: translateX(0); }
   }
 
+  @media (max-width: 768px) {
+    .carousel-track-horizontal img,
+    .carousel-track img,
+    .discover .gallery img,
+    .banner img,
+    .apartment-card img {
+      width: 100%;
+      height: auto;
+    }
+
+    .banner-nav {
+      flex-direction: column;
+      top: 10px;
+      right: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border-radius: 8px;
+      padding: 0.5em;
+    }
+
+    section {
+      padding: 1.5em 1em;
+    }
+
+    .discover .gallery {
+      flex-direction: column;
+    }
+
+    .discover .gallery img {
+      max-width: 100% !important;
+    }
+
+    .carousel-track-horizontal {
+      flex-direction: row;
+    }
+
+    .carousel-track-horizontal img {
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner-nav {
+      flex-direction: column;
+      gap: 0.5em;
+      top: 10px;
+      right: 10px;
+      padding: 0.5em;
+    }
+
+    header h1,
+    h2, h3 {
+      font-size: 1.3em;
+    }
+
+    .carousel-track img,
+    .carousel-track-horizontal img,
+    .discover .gallery img,
+    .apartment-card img,
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .apartment-card {
+      margin: 0.5em 0;
+      max-width: 100%;
+    }
+
+    .discover .gallery {
+      flex-direction: column;
+    }
+
+    .discover .gallery img {
+      max-width: 100%;
+    }
+
+    section {
+      padding: 1em;
+    }
+  }
+
 </style>
 </head>
 <body>
