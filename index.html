@@ -123,6 +123,20 @@
       .map-container {
       margin-top: 1em;
     }
+      .apartment-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .apartment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    @media (max-width: 768px) {
+      .apartment-card {
+        flex: 1 1 100% !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -148,23 +162,25 @@
   </section>
 
   <section id="room">
-    <h2>Our Rooms</h2>
-    <div class="apartment-card">
+  <h2>Our Rooms</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2em;">
+    <div class="apartment-card" style="flex: 1 1 300px;">
       <img src="photostudio.JPG" alt="Studio Room">
       <h3>Studio Apartment</h3>
       <p>$800/month – Compact and cozy living for singles or students.</p>
     </div>
-    <div class="apartment-card">
+    <div class="apartment-card" style="flex: 1 1 300px;">
       <img src="photo2badroom.JPG" alt="2 Bed Room">
       <h3>2 Bedroom Apartment</h3>
       <p>$1,200/month – Perfect for small families or roommates.</p>
     </div>
-    <div class="apartment-card">
+    <div class="apartment-card" style="flex: 1 1 300px;">
       <img src="photo3badroom.JPG" alt="3 Bed Room">
       <h3>3 Bedroom Apartment</h3>
       <p>$1,800/month – Spacious layout for larger families.</p>
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="book">
   <h2>Book Your Stay</h2>
