@@ -167,18 +167,41 @@
   </section>
 
   <section id="book">
-    <h2>Book Now</h2>
-    <form>
-      <input type="text" placeholder="Name" required>
-      <input type="tel" placeholder="Phone Number" required>
-      <select required>
-        <option value="">Gender</option>
-        <option value="M">Male</option>
-        <option value="F">Female</option>
-      </select>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <h2>Book Your Stay</h2>
+  <form>
+    <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender" required>
+      <option value="">Select Gender</option>
+      <option value="M">Male</option>
+      <option value="F">Female</option>
+    </select>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <label for="room">Room Type</label>
+    <select id="room" name="room" required>
+      <option value="">Select Room</option>
+      <option value="studio">Studio Apartment</option>
+      <option value="2bed">2 Bedroom Apartment</option>
+      <option value="3bed">3 Bedroom Apartment</option>
+    </select>
+
+    <label for="checkin">Check-in Date</label>
+    <input type="date" id="checkin" name="checkin" required>
+
+    <label for="checkout">Check-out Date</label>
+    <input type="date" id="checkout" name="checkout" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
 
   <section id="service">
     <h2>Our Services</h2>
