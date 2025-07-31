@@ -1,99 +1,134 @@
-/* Banner Style */
-.banner {
-  position: relative;
-  overflow: hidden;
-}
+<style>
+    body {
+      background-color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      padding-top: 1em;
+    }
 
-.banner img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  filter: brightness(80%);
-}
+    .banner {
+      position: relative;
+    }
 
-/* Navigation Buttons on Banner */
-.banner-nav {
-  position: absolute;
-  top: 30px;
-  right: 40px;
-  display: flex;
-  gap: 1.2em;
-  z-index: 10;
-}
+    .banner img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
 
-.banner-nav a {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 0.7em 1.5em;
-  border-radius: 30px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
-}
+    .banner-nav {
+      position: absolute;
+      top: 30px;
+      right: 40px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1em;
+      z-index: 10;
+    }
 
-.banner-nav a:hover {
-  background: rgba(255, 255, 255, 0.9);
-  color: #000;
-}
+    .banner-nav a {
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.7em 1.6em;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      border-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+      font-size: 0.95rem;
+      letter-spacing: 0.8px;
+    }
 
-/* Book Now Button */
-.banner-nav a:first-child {
-  background-color: #FFA500;
-  color: #000;
-  font-weight: bold;
-}
+    .banner-nav a:hover {
+      background: linear-gradient(to right, #0072ff, #00c6ff);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+    }
 
-.banner-nav a:first-child:hover {
-  background-color: #ff8800;
-  color: #fff;
-}
+    header {
+      background-color: #2b2b2b;
+      color: white;
+      padding: 2em 1em;
+      text-align: center;
+    }
 
-/* Responsive Text and Header */
-header h1 {
-  font-size: 2.2em;
-  margin-bottom: 0.3em;
-  color: #333;
-}
+    section {
+      padding: 2em;
+      max-width: 900px;
+      margin: auto;
+    }
 
-header img {
-  max-width: 100%;
-  height: auto;
-  margin-top: 1em;
-  border-radius: 10px;
-}
+    .apartment-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 1em;
+      margin: 1em auto;
+      max-width: 600px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
 
-header {
-  text-align: center;
-}
+    .apartment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
 
-/* Apartment Cards */
-.apartment-card h3 {
-  color: #0072ff;
-  font-weight: 600;
-}
+    .apartment-card img {
+      width: 100%;
+      border-radius: 8px;
+    }
 
-.apartment-card p {
-  color: #444;
-  font-size: 0.95rem;
-}
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
 
-/* Section Headings */
-section h2 {
-  color: #222;
-  font-size: 1.6em;
-  border-bottom: 2px solid #0072ff;
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
-  text-align: center;
-}
+    input, textarea, select {
+      padding: 0.8em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1em;
+    }
 
-/* Welcome Image */
-.header-image {
-  width: 100%;
-  max-width: 800px;
-  display: block;
-  margin: 1em auto;
-  border-radius: 10px;
-}
+    button {
+      padding: 0.8em;
+      background-color: #2b2b2b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    footer {
+      background-color: #2b2b2b;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      margin-top: 2em;
+    }
+
+    .location {
+      margin-top: 1em;
+      color: #ccc;
+      font-size: 0.95em;
+    }
+
+    .map-container {
+      margin-top: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .apartment-card {
+        flex: 1 1 100% !important;
+      }
+    }
+</style>
